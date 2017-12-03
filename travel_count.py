@@ -1,3 +1,12 @@
+'''
+This File invokes uses NLTK module to give the count of Travel word
+- NLTK is used for Tokenization and Filtering
+- Generate list of Tokens and Counts the word Travel
+ 
+Author: Bala Vineeth Netha Thatipamula
+'''
+
+# Relavant Libraries
 import os
 from subprocess import call
 from nltk.tokenize import word_tokenize
@@ -24,5 +33,4 @@ for txt_file in text_files:
     # print tokens
     travel_counter += filtered_tokens.count('travel')
     print"*********************"
-    print txt_file
-    print travel_counter
+    print("Name: {} ---- Travel count:{}".format( txt_file[:-4], travel_counter ))

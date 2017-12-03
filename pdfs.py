@@ -1,4 +1,11 @@
-import scrapy
+'''
+This File invokes uses Scrapy module to crawl the webpage - http://ir.expediainc.com/annuals.cfm
+- Opens the relevant web-page and Downloads all the PDFs
+
+Author: Bala Vineeth Netha Thatipamula
+'''
+
+# Relavant Librariesimport scrapy
 import requests
 
 class PDFSpider(scrapy.Spider):
